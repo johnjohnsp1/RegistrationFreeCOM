@@ -6,7 +6,7 @@ Extract Files to C:\Tools\regfree
 CScript Example:
 C:\Windows\syswow64\cscript.exe regfree.js
 
-PowerShell Example:
+PowerShell Example:   Be Sure to Use x86 PowwerShell for my POC
 $a = New-Object -COM Microsoft.Windows.ActCTX
 $a.Manifest = "C:\Tools\regfree\SideBySide.X.manifest"
 $a.CreateObject("SideBySide.X")
