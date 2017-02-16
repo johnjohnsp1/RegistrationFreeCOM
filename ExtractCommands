@@ -1,0 +1,4 @@
+$Base64 = Get-Content -Path encoded.txt
+$Content = [System.Convert]::FromBase64String($Base64)
+Set-Content -Path regfree.zip -Value $Content -Encoding Byte
+#This will create the Zip file.
